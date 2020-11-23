@@ -1,0 +1,5 @@
+﻿.gradle
+.settings
+.project
+.classpath
+target
