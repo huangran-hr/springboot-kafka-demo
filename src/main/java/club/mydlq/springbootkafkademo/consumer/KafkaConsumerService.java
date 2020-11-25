@@ -16,7 +16,7 @@ import club.mydlq.springbootkafkademo.dto.PersonDto;
 public class KafkaConsumerService {
 	@Resource
 	private ObjectMapper objectMapper;
-	
+
     @KafkaListener(topics = {"test"}, groupId = "group1", containerFactory="kafkaListenerContainerFactory")
 	//@KafkaHandler
     public void kafkaListener(String message){
